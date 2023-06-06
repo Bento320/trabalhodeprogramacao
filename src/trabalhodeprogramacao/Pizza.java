@@ -13,10 +13,6 @@ public class Pizza extends Prato {
     private String molho, recheio, cobertura;
     
 //    Métodos Especiais
-
-    
-    
-
     public String getMolho() {
         return molho;
     }

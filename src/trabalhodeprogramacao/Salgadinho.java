@@ -9,5 +9,33 @@ package trabalhodeprogramacao;
  * @author Bento Ambrósio
  */
 public class Salgadinho extends Prato {
+//    Atributos
     private String tipo, recheio, massa;
+    
+//    Métodos especiais
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public String getRecheio() {
+        return recheio;
+    }
+
+    public void setRecheio(String recheio) {
+        this.recheio = recheio;
+    }
+
+    public String getMassa() {
+        return massa;
+    }
+
+    public void setMassa(String massa) {
+        this.massa = massa;
+    }
+
 }

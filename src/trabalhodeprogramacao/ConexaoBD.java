@@ -17,15 +17,14 @@ public class ConexaoBD {
     Statement conec = null;
     ResultSet result = null;
     
-   public Connection conet(){
+   public Connection conet() throws ClassNotFoundException{
        Connection conecta = null;
         try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
             String url = "jdbc:mysql//localhost:3306/programa?user=root&password=";
             conecta = DriverManager.getConnection(url);
-            
-        Class.forName("com.mysql.cj.jdbc.Driver");
-    }catch(Exception ex){
-    
+    }catch(SQLException ex){
+        
     }
         return conecta;
    }

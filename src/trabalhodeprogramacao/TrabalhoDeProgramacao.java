@@ -14,7 +14,11 @@ public class TrabalhoDeProgramacao {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Cliente cli = new Cliente();
+        Pedido p = new Pedido();
+        cli.cadastrarCliente();
+        p.mostrarCardapioEfactura();
+        
     }
     
 }

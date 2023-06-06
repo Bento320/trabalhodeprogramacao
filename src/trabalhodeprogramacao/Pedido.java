@@ -78,19 +78,23 @@ public class Pedido {
         System.out.println("Salgadinho");
         
         System.out.println("Desaja efectuar um pedido?");
-        System.out.println("Digite 's' se sim e 'n' se não!");
+        System.out.println("Digite 's' se sim ou 'n' se não!");
         String opcao = ler.nextLine();
         if("s".equals(opcao)){
             System.out.println("Escolha quantos pratos forem necessário");
             System.out.println("Quando desejar parar digite 'p'");
-            System.out.println("Escolha sua opção no cardápio digitando o numero em que se encotra o prato");
-            String p = ler.nextLine();
+            System.out.println("Escolha sua opção no cardápio digitando o numero em que se encontra o prato");
             for(;;){
+                String p = ler.nextLine();
                 if(!"p".equals(p)){
                     
+                }else{
+                    break;
                 }
             }
             
+            System.out.println("Nome do cliente: "+this.getCliente().getNome());
+            System.out.println("");
             
         }else{
             

@@ -4,6 +4,8 @@
  */
 package trabalhodeprogramacao;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Bento Ambrósio
@@ -38,6 +40,13 @@ public class Cliente {
 
     public void setNumeroDeCompras(int numeroDeCompras) {
         this.numeroDeCompras = numeroDeCompras;
+    }
+    
+    public void cadastrarCliente(){
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Informe o seu nome");
+        nome = ler.nextLine();
+        this.setNome(getNome());
     }
     
 }

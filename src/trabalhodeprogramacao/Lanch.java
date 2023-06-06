@@ -9,5 +9,5 @@ package trabalhodeprogramacao;
  * @author Bento Ambrósio
  */
 public class Lanch extends Prato {
-    
+    private String molho, recheio, cobertura;
 }

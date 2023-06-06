@@ -9,5 +9,5 @@ package trabalhodeprogramacao;
  * @author Bento Ambrósio
  */
 public class Salgadinho extends Prato {
-    
+    private String tipo, recheio, massa;
 }

@@ -8,6 +8,6 @@ package trabalhodeprogramacao;
  *
  * @author Bento Ambrósio
  */
-public class Salgadinho {
+public class Salgadinho extends Prato {
     
 }

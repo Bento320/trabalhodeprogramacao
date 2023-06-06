@@ -8,6 +8,6 @@ package trabalhodeprogramacao;
  *
  * @author Bento Ambrósio
  */
-public class Lanch {
+public class Lanch extends Prato {
     
 }

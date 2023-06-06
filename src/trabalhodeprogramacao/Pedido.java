@@ -4,6 +4,8 @@
  */
 package trabalhodeprogramacao;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Bento Ambrósio
@@ -12,5 +14,6 @@ public class Pedido {
 //    Atributos
     private Cliente cliente;
     private double taxaDeServico;
+    private ArrayList <Prato> prato = new ArrayList<>();
     
 }

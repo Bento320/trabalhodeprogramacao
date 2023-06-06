@@ -8,7 +8,7 @@ package trabalhodeprogramacao;
  *
  * @author Bento Ambrósio
  */
-public class Pizza {
+public class Pizza extends Prato {
 //    Atributos
     private String molho, recheio, cobertura;
     

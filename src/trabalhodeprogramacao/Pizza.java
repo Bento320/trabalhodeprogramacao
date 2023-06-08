@@ -4,13 +4,15 @@
  */
 package trabalhodeprogramacao;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Bento Ambrósio
  */
 public class Pizza extends Prato {
 //    Atributos
-    private String molho, recheio, cobertura;
+    private String molho, cobertura;
     
 //    Métodos Especiais
     public String getMolho() {
@@ -21,14 +23,6 @@ public class Pizza extends Prato {
         this.molho = molho;
     }
 
-    public String getRecheio() {
-        return recheio;
-    }
-
-    public void setRecheio(String recheio) {
-        this.recheio = recheio;
-    }
-
     public String getCobertura() {
         return cobertura;
     }
@@ -36,5 +30,27 @@ public class Pizza extends Prato {
     public void setCobertura(String cobertura) {
         this.cobertura = cobertura;
     }
+    public void cardapioPizza(){
+       Scanner ler = new Scanner(System.in);
+        System.out.println("Molhos específicos");
+        System.out.println("1 - Molho de tomate");
+        System.out.println("2 - Molho branco");
+        System.out.println("3 - Molho Pesto");
+        System.out.println("Escolha uma opcão");
+        int molho = ler.nextInt();
+        System.out.println("Recheios Específicos");
+        System.out.println("1");
+        System.out.println("2");
+        System.out.println("3");
+        System.out.println("Escolha uma opcão");
+        int recheio = ler.nextInt();
+        System.out.println("Coberturas Específicos");
+        System.out.println("1");
+        System.out.println("2");
+        System.out.println("3");
+        System.out.println("Escolha uma opcão");
+        int cobertura = ler.nextInt();
+    }
+     
     
 }

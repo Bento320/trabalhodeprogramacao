@@ -45,8 +45,8 @@ public class Cliente {
     public void cadastrarCliente(){
         Scanner ler = new Scanner(System.in);
         System.out.println("Informe o seu nome");
-        nome = ler.nextLine();
-        this.setNome(getNome());
+        this.nome = ler.nextLine();
+        this.setNome(nome);
     }
     
 }

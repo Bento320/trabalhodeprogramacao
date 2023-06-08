@@ -14,11 +14,10 @@ public class TrabalhoDeProgramacao {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Cliente cli = new Cliente();
         Pedido p = new Pedido();
-        cli.cadastrarCliente();
-        p.mostrarCardapioEfactura();
-        
+        p.mostrarCardapio();
+        p.solicitacao();
+        p.dadosDoPedido();
     }
     
 }

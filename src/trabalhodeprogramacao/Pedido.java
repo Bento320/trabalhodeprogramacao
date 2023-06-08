@@ -23,10 +23,6 @@ public class Pedido {
         return cliente;
     }
 
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
-    }
-
     public double getTaxaDeServico() {
         return taxaDeServico;
     }
@@ -43,62 +39,45 @@ public class Pedido {
         this.prato = prato;
     }
     
-    public void mostrarCardapioEfactura(){
-       Scanner ler = new Scanner(System.in);
-        
-        System.out.println("=========Seja bem vindo=========");
-        System.out.println("=============Cardapio=============");
-        System.out.println("Pizza");
-        System.out.println("Pizza");
-        System.out.println("Pizza");
-        System.out.println("Pizza");
-        System.out.println("Pizza");
-        System.out.println("Pizza");
-        System.out.println("Pizza");
-        System.out.println("Pizza");
-        System.out.println("Pizza");
-        System.out.println("Lanch");
-        System.out.println("Lanch");
-        System.out.println("Lanch");
-        System.out.println("Lanch");
-        System.out.println("Lanch");
-        System.out.println("Lanch");
-        System.out.println("Lanch");
-        System.out.println("Lanch");
-        System.out.println("Lanch");
-        System.out.println("Salgadinho");
-        System.out.println("Salgadinho");
-        System.out.println("Salgadinho");
-        System.out.println("Salgadinho");
-        System.out.println("Salgadinho");
-        System.out.println("Salgadinho");
-        System.out.println("Salgadinho");
-        System.out.println("Salgadinho");
-        System.out.println("Salgadinho");
-        System.out.println("Salgadinho");
-        
-        System.out.println("Desaja efectuar um pedido?");
-        System.out.println("Digite 's' se sim ou 'n' se não!");
-        String opcao = ler.nextLine();
-        if("s".equals(opcao)){
-            System.out.println("Escolha quantos pratos forem necessário");
+    public void mostrarCardapio(){
+        System.out.println("==========Seja Bem Vindo============");
+        System.out.println("===========Cardápio===========");
+        System.out.println("1 - Pizza");
+        System.out.println("2 - Lanch");
+        System.out.println("3 - Salgadinho");
+    }
+    public void solicitacao(){
+      Scanner ler = new Scanner(System.in);
+        System.out.println("Deseja efectuar um pedido?");
+        System.out.println("1- Sim");
+        System.out.println("2- Não");
+        int resposta = ler.nextInt();
+        if(resposta == 1){
+            System.out.println("===========Cardápio===========");
+        System.out.println("1 - Pizza");
+        System.out.println("2 - Lanch");
+        System.out.println("3 - Salgadinho");
+            System.out.println("Escolha os pratos desejados");
             System.out.println("Quando desejar parar digite 'p'");
-            System.out.println("Escolha sua opção no cardápio digitando o numero em que se encontra o prato");
             for(;;){
                 String p = ler.nextLine();
-                if(!"p".equals(p)){
-                    
+                if(!p.equals('p')){
+                    int opcao = ler.nextInt();
+                    switch(opcao){
+                        case 1:
+                        Pizza pizza = new Pizza();
+                        pizza.cardapioPizza();
+                    }
                 }else{
                     break;
                 }
             }
-            
-            System.out.println("Nome do cliente: "+this.getCliente().getNome());
-            System.out.println("");
-            
-        }else{
-            
         }
+    }
+    public void dadosDoPedido(){
+        Cliente cli = new Cliente();
+        cli.cadastrarCliente();
+        System.out.println("Nome do cliente: "+cli.getNome());
     }
     
 }

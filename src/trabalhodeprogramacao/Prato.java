@@ -13,6 +13,7 @@ import java.util.Scanner;
 public class Prato {
 //    Atributos
     private String nome;
+    private String recheio;
     private double preco;
     private String dataDeVAlidade;
     private float peso;
@@ -59,6 +60,15 @@ public class Prato {
         this.peso = peso;
         this.setPreco();
     }
+
+    public String getRecheio() {
+        return recheio;
+    }
+
+    public void setRecheio(String recheio) {
+        this.recheio = recheio;
+    }
+    
     
 //    Métodos personalizados
     public void cadastroDoProduto(){

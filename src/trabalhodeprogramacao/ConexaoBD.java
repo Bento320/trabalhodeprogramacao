@@ -24,7 +24,7 @@ public class ConexaoBD {
             String url = "jdbc:mysql//localhost:3306/programa?user=root&password=";
             conecta = DriverManager.getConnection(url);
     }catch(SQLException ex){
-        
+            System.out.println("");
     }
         return conecta;
    }

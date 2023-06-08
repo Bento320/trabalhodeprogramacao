@@ -15,9 +15,11 @@ public class TrabalhoDeProgramacao {
      */
     public static void main(String[] args) {
         Pedido p = new Pedido();
+        Cliente c = new Cliente();
         p.mostrarCardapio();
         p.solicitacao();
-        p.dadosDoPedido();
+//        p.cadastrarCliente();
+//        p.dadosDoPedido();
     }
     
 }

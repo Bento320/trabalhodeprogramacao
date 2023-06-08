@@ -42,11 +42,12 @@ public class Cliente {
         this.numeroDeCompras = numeroDeCompras;
     }
     
-    public void cadastrarCliente(){
+    public String cadastrarCliente(){
         Scanner ler = new Scanner(System.in);
         System.out.println("Informe o seu nome");
         this.nome = ler.nextLine();
         this.setNome(nome);
+        return this.getNome();
     }
     
 }
